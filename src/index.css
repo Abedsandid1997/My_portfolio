@@ -1,0 +1,153 @@
+@import "tailwindcss";
+
+@theme {
+/* Darkest Blue - Main Background */
+  --color-background: #0F103F;
+  /* Kept original light text for readability */
+  --color-foreground: #f0f2f5;
+
+  /* Dark Indigo - Cards & Surfaces */
+  --color-card: #1C1C65;
+  --color-surface: #1C1C65;
+
+  /* Bright Pink/Purple - Primary Buttons/Links */
+  --color-primary: #C961DE;
+  --color-primary-foreground: #ffffff;
+
+  /* Royal Blue - Secondary Actions */
+  --color-secondary: #2954A3;
+  --color-secondary-foreground: #ffffff;
+
+  /* Medium Indigo - Muted areas */
+  --color-muted: #2F2F8A;
+  --color-muted-foreground: #7a8491;
+
+  /* Borders */
+  --color-border: #2F2F8A;
+
+  /* Radius (Unchanged) */
+  --radius: 0.75rem;
+
+  /* Accents */
+  --color-highlight: #C961DE;
+  --color-surface: #2F2F8A;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: "Inter", sans-serif;
+  }
+
+  .font-serif {
+    font-family: "Playfair Display", serif;
+  }
+}
+
+@layer components {
+  .glass {
+    background-color: color-mix(in srgb, var(--color-surface) 50%, transparent);
+    /* backdrop-filter: blur(16px); */
+    border: 1px solid color-mix(in srgb, var(--color-border) 50%, transparent);
+    transform: translateZ(0);
+    will-change: transform, opacity;
+  }
+
+  .glass-strong {
+    background-color: color-mix(in srgb, var(--color-surface) 80%, transparent);
+    /* backdrop-filter: blur(24px); */
+    border: 1px solid color-mix(in srgb, var(--color-border) 60%, transparent);
+    transform: translateZ(0);
+    will-change: transform, opacity;
+  }
+
+  .glow-text {
+    text-shadow: 0 0 30px
+      color-mix(in srgb, var(--color-primary) 50%, transparent);
+  }
+
+  .glow-border {
+    box-shadow: 0 0 20px
+        color-mix(in srgb, var(--color-primary) 20%, transparent),
+      inset 0 0 20px color-mix(in srgb, var(--color-primary) 5%, transparent);
+  }
+
+}
+
+@layer utilities {
+
+ @keyframes slow-drift {
+    0%,100% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(20px, -30px);
+    }
+    50% {
+      transform: translate(-15px, -20px);
+    }
+    25% {
+      transform: translate(30px, 10px);
+    }
+ }
+
+ @keyframes animated-border {
+   0% {
+     stroke-dashoffset: 400;
+   }
+   100% {
+    stroke-dashoffset: -550;
+   }
+ }
+
+ @keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); 
+ }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+  .animate-marquee {
+    animation: marquee 60s linear infinite;
+  }
+
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+
+  .group:hover .animated-border-path {
+    animation: animated-border 1.5s linear infinite;
+  }
+
+  .animated-border:hover {
+  background-color: color-mix(in srgb, var(--color-primary) 15%, transparent);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 0 20px color-mix(in srgb, var(--color-primary) 25%, transparent);
+  }
+
+  .timeline-glow {
+    box-shadow: 0 0 40px
+        color-mix(in srgb, var(--color-primary) 35%, transparent),
+        0 0 80px color-mix(in srgb, var(--color-primary) 25%,
+          transparent);
+  }
+}
+  

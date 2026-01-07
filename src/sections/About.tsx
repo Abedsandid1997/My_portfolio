@@ -9,13 +9,13 @@ const About = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">
-            <motion.div {...fadeIn({ delay: 0.4 })}>
+            <motion.div {...fadeIn()}>
               <span className="text-primary text-sm font-medium tracking-wider uppercase">
                 About Me
               </span>
             </motion.div>
             <motion.h2
-              {...fadeIn({ delay: 0.3 })}
+              {...fadeIn({ delay: 0.1 })}
               className="text-4xl md:text-5xl font-bold leading-tight text-primary"
             >
               Modern Full Stack Development,
@@ -54,7 +54,7 @@ const About = () => {
               </p>
             </motion.div>
             <motion.div
-              {...fadeIn({ delay: 0.1 })}
+              {...fadeIn({ delay: 0.3 })}
               className="glass rounded-2xl p-6 glow-border"
             >
               <p className="text-lg font-medium italic text-foreground">

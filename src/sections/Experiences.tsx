@@ -13,7 +13,7 @@ const Experiences = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-3xl mb-16">
           <motion.span
-            {...fadeIn({ delay: 0.2 })}
+            {...fadeIn()}
             className="text-primary text-sm font-medium tracking-wider uppercase"
           >
             Career Journey
@@ -28,7 +28,10 @@ const Experiences = () => {
               speaks volumes.
             </span>
           </motion.h2>
-          <motion.p {...fadeIn()} className="text-muted-foreground">
+          <motion.p
+            {...fadeIn({ delay: 0.2 })}
+            className="text-muted-foreground"
+          >
             A timeline of my professinoal growth.
           </motion.p>
         </div>

@@ -13,13 +13,13 @@ const Skills = () => {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <motion.span
-            {...fadeIn({ delay: 0.1 })}
+            {...fadeIn()}
             className="text-primary text-sm font-medium tracking-wider uppercase"
           >
             Technical Proficiency
           </motion.span>
           <motion.h2
-            {...fadeIn()}
+            {...fadeIn({ delay: 0.1 })}
             className="text-4xl md:text-5xl font-bold mt-4 mb-6 text-primary"
           >
             My Tech Stack &{" "}

@@ -7,7 +7,7 @@ import { fadeIn } from "../../utils/motionPresets";
 const ProfileContent = () => {
   return (
     <div className="space-y-8">
-      <motion.div {...fadeIn({ delay: 0.4 })}>
+      <motion.div {...fadeIn()}>
         <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
           <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
           Software Developer
@@ -16,7 +16,7 @@ const ProfileContent = () => {
 
       <div className="space-y-4">
         <motion.h1
-          {...fadeIn({ delay: 0.3 })}
+          {...fadeIn({ delay: 0.1 })}
           className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight"
         >
           Crafting <span className="text-primary glow-text">digital</span>
@@ -39,9 +39,10 @@ const ProfileContent = () => {
         </motion.p>
       </div>
 
-      <motion.div {...fadeIn({ delay: 0.1 })} className="flex flex-wrap gap-4">
+      <motion.div {...fadeIn({ delay: 0.3 })} className="flex flex-wrap gap-4">
         <Button size="lg">
-          Contact Me <ArrowRight size={20} />
+          <a href="#contact">Contact Me</a>
+          <ArrowRight size={20} />
         </Button>
         <AnimatedButton>
           <Download size={20} />
@@ -50,7 +51,10 @@ const ProfileContent = () => {
       </motion.div>
 
       {/* Social Links */}
-      <motion.div {...fadeIn()} className="flex items-center gap-4">
+      <motion.div
+        {...fadeIn({ delay: 0.4 })}
+        className="flex items-center gap-4"
+      >
         <span className="text-sm text-muted-foreground">Follow Me:</span>
         {[
           { icon: FaGithub, href: "https://github.com/Abedsandid1997" },

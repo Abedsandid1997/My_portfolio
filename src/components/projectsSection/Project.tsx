@@ -20,11 +20,8 @@ type Props = {
 const Project = ({ project, index }: Props) => {
   return (
     <motion.div
-      {...fadeIn()}
+      {...fadeIn({ delay: index * 0.1 })}
       className="group glass rounded-2xl glow-border overflow-hidden md:row-span-1"
-      style={{
-        animationDelay: `${(index + 1) * 100}ms`,
-      }}
     >
       <div className="relative overflow-hidden aspect-video">
         <img

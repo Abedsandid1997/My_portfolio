@@ -5,7 +5,7 @@ import { fadeIn } from "../../utils/motionPresets";
 const ScrollArrow = () => {
   return (
     <motion.div
-      {...fadeIn()}
+      {...fadeIn({ delay: 0.5 })}
       className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10"
     >
       <a

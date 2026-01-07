@@ -46,7 +46,7 @@ const Contact = () => {
             Get In Touch
           </span>
           <motion.h2
-            {...fadeIn({ delay: 0.2 })}
+            {...fadeIn()}
             className="text-4xl md:text-5xl font-bold mt-4 mb-6 text-secondary-foreground"
           >
             Let's build{" "}
@@ -65,7 +65,7 @@ const Contact = () => {
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
           <motion.div
-            {...fadeIn()}
+            {...fadeIn({ delay: 0.2 })}
             className="glass p-8 rounded-3xl border border-primary/30"
           >
             <ContactForm onClick={sendEmail} error={error} />

@@ -13,13 +13,13 @@ const Projects = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mx-auto max-w-3xl mb-16">
           <motion.span
-            {...fadeIn({ delay: 0.3 })}
+            {...fadeIn()}
             className="text-primary text-sm font-medium tracking-wider uppercase"
           >
             Featured Work
           </motion.span>
           <motion.h2
-            {...fadeIn({ delay: 0.2 })}
+            {...fadeIn({ delay: 0.1 })}
             className="text-4xl md:text-5xl font-bold mt-4 mb-6 text-primary"
           >
             Projects that{" "}
@@ -29,7 +29,7 @@ const Projects = () => {
             </span>
           </motion.h2>
           <motion.p
-            {...fadeIn({ delay: 0.1 })}
+            {...fadeIn({ delay: 0.2 })}
             className="text-muted-foreground"
           >
             A selection of my recent work.
@@ -42,7 +42,7 @@ const Projects = () => {
           ))}
         </div>
 
-        <motion.div {...fadeIn()} className="text-center mt-12">
+        <motion.div {...fadeIn({ delay: 0.3 })} className="text-center mt-12">
           <AnimatedButton>
             View All Projects
             <ArrowUpRight className="w-5 h-5" />

@@ -7,7 +7,7 @@ import { fadeIn } from "../../utils/motionPresets";
 const ProfileContent = () => {
   return (
     <div className="space-y-8">
-      <motion.div {...fadeIn()}>
+      <motion.div {...fadeIn({delay: 0})}>
         <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
           <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
           Software Developer

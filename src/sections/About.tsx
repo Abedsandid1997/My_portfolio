@@ -9,7 +9,7 @@ const About = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">
-            <motion.div {...fadeIn()}>
+            <motion.div {...fadeIn({ delay: 0 })}>
               <span className="text-primary text-sm font-medium tracking-wider uppercase">
                 About Me
               </span>

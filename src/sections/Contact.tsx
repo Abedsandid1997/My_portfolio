@@ -46,7 +46,7 @@ const Contact = () => {
             Get In Touch
           </span>
           <motion.h2
-            {...fadeIn()}
+            {...fadeIn({ delay: 0 })}
             className="text-4xl md:text-5xl font-bold mt-4 mb-6 text-secondary-foreground"
           >
             Let's build{" "}

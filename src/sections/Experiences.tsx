@@ -13,7 +13,7 @@ const Experiences = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-3xl mb-16">
           <motion.span
-            {...fadeIn()}
+            {...fadeIn({ delay: 0 })}
             className="text-primary text-sm font-medium tracking-wider uppercase"
           >
             Career Journey

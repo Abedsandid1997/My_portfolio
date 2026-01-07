@@ -13,7 +13,7 @@ const Skills = () => {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <motion.span
-            {...fadeIn()}
+            {...fadeIn({ delay: 0 })}
             className="text-primary text-sm font-medium tracking-wider uppercase"
           >
             Technical Proficiency

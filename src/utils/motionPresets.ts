@@ -4,9 +4,9 @@ export const fadeIn = ({ delay = 0, duration = 0.8, y = 30 } = {}) => ({
   transition: {
     duration,
     delay,
-    type: "spring" as const,
-    stiffness: 100,
-    // ease: "easeInOut" as const,
+    // type: "spring" as const,
+    // stiffness: 100,
+    ease: "easeInOut" as const,
   },
   viewport: {
     once: false,

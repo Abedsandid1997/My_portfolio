@@ -1,6 +1,31 @@
 import { FaHtml5, FaCss3, FaDocker, FaGithub } from "react-icons/fa";
 import { LuWorkflow } from "react-icons/lu";
-import { SiAnsible, SiChai, SiChakraui, SiCypress, SiExpress, SiGit, SiGithubactions, SiGraphql, SiJavascript, SiMocha, SiMongodb, SiNextdotjs, SiNodedotjs, SiOpenai, SiPostgresql, SiPostman, SiPrisma, SiRadixui, SiReact, SiTailwindcss, SiTypescript, SiVercel, SiZod } from "react-icons/si";
+import {
+  SiAnsible,
+  SiChai,
+  SiChakraui,
+  SiCypress,
+  SiExpress,
+  SiGit,
+  SiGithubactions,
+  SiGraphql,
+  SiJavascript,
+  SiMocha,
+  SiMongodb,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiOpenai,
+  SiPostgresql,
+  SiPostman,
+  SiPrisma,
+  SiPython,
+  SiRadixui,
+  SiReact,
+  SiTailwindcss,
+  SiTypescript,
+  SiVercel,
+  SiZod,
+} from "react-icons/si";
 import type { SkillCategory } from "./Skill";
 import { VscTerminal } from "react-icons/vsc";
 
@@ -29,6 +54,7 @@ export const skillCategories: SkillCategory[] = [
     description: "Robust server-side logic, APIs, and database management.",
     skills: [
       { name: "Node.js", icon: SiNodedotjs },
+      { name: "Python", icon: SiPython },
       { name: "Express", icon: SiExpress },
       { name: "PostgreSQL", icon: SiPostgresql },
       { name: "MongoDB", icon: SiMongodb },

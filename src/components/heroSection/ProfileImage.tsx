@@ -10,7 +10,7 @@ const ProfileImage = () => {
           <img
             src="/abed.webp"
             alt="Abdelrman Sandid"
-            className="w-full aspect-4/5 object-cover rounded-2xl"
+            className="w-full aspect-4/5 object-cover object-top rounded-2xl"
           />
           <div className="absolute -bottom-4 -right-4 glass rounded-xl px-4 py-3 animate-float">
             <div className="flex items-center gap-3">

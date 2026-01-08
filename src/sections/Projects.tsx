@@ -13,11 +13,12 @@ const Projects = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mx-auto max-w-3xl mb-16">
           <motion.span
-            {...fadeIn({ delay: 0, y: 50 })}
+            {...fadeIn()}
             className="text-primary text-sm font-medium tracking-wider uppercase"
           >
             Featured Work
           </motion.span>
+
           <motion.h2
             {...fadeIn({ delay: 0.1 })}
             className="text-4xl md:text-5xl font-bold mt-4 mb-6 text-primary"
@@ -44,7 +45,7 @@ const Projects = () => {
 
         <motion.div {...fadeIn({ delay: 0.3 })} className="text-center mt-12">
           <AnimatedButton>
-            View All Projects
+            <a href="https://github.com/Abedsandid1997">View All Projects</a>
             <ArrowUpRight className="w-5 h-5" />
           </AnimatedButton>
         </motion.div>

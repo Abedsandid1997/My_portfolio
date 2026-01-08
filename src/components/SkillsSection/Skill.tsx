@@ -20,8 +20,8 @@ type Props = {
 const Skill = ({ index, category }: Props) => {
   return (
     <motion.div
-      {...fadeIn({ delay: (index + 1) * 0.1 })}
-      className="glass p-8 rounded-3xl border border-primary/20 glow-border hover:border-primary/50 transition-all duration-500 group flex flex-col"
+      {...fadeIn({ delay: index * 0.1 })}
+      className="glass p-8 rounded-3xl border border-primary/20 glow-border hover:border-primary/50 transition-colors duration-500 group flex flex-col"
     >
       {/* Category Header */}
       <div className="mb-6">

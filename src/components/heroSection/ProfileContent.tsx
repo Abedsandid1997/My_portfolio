@@ -4,10 +4,12 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import AnimatedButton from "../AnimatedButton";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../utils/motionPresets";
+import resume from "../../assets/Abdelraman-CV.pdf";
+
 const ProfileContent = () => {
   return (
     <div className="space-y-8">
-      <motion.div {...fadeIn({delay: 0})}>
+      <motion.div {...fadeIn({ delay: 0 })}>
         <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
           <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
           Software Developer
@@ -45,8 +47,10 @@ const ProfileContent = () => {
           <ArrowRight size={20} />
         </Button>
         <AnimatedButton>
+          <a href={resume} download={resume}>
+            Download CV
+          </a>
           <Download size={20} />
-          Download CV
         </AnimatedButton>
       </motion.div>
 

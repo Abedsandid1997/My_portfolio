@@ -9,7 +9,7 @@ export const fadeIn = ({ delay = 0, duration = 0.8, y = 30 } = {}) => ({
     ease: "easeInOut" as const,
   },
   viewport: {
-    once: false,
+    once: true,
     amount: 0.2,
   },
 });

@@ -37,4 +37,40 @@ export const projects: ProjectData[] = [
     link: "https://movies-hub-swart-beta.vercel.app/",
     github: "https://github.com/Abedsandid1997/movies-hub",
   },
+  {
+    title: "SSK Editor",
+    description:
+      "A real-time collaborative editor allowing users to create, share, and simultaneously edit text and code documents. Built with SSR principles, it utilizes WebSockets for live cursor tracking and updates, backed by a robust Express and GraphQL API.",
+    image: "/projects/ssk-editor.webp",
+    tags: [
+      "Next.js",
+      "Radix UI",
+      "TypeScript",
+      "Express",
+      "GraphQL",
+      "Socket.io",
+      "MongoDB",
+      "Mongoose",
+      "JWT",
+      "Node.js",
+    ],
+    github: "https://github.com/Abedsandid1997/document-editor",
+  },
+  {
+    title: "El-Scooter API",
+    description:
+      "A RESTful API for an e-scooter sharing system. It supports real-time bike tracking, user authentication, travel history, charging stations, and city management. Built with a scalable backend architecture and Dockerized for easy deployment.",
+    image: "/projects/el-scooter.webp",
+    tags: [
+      "Node.js",
+      "Express",
+      "MariaDB",
+      "MySQL",
+      "Socket.IO",
+      "JWT",
+      "Docker",
+      "Docker Compose",
+    ],
+    github: "https://github.com/Abedsandid1997/el-scooter",
+},
 ];

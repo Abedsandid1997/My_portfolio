@@ -21,7 +21,7 @@ const Project = ({ project, index }: Props) => {
   return (
     <motion.div
       {...fadeIn({ delay: index * 0.1 })}
-      className="group glass rounded-2xl glow-border overflow-hidden md:row-span-1"
+      className="group glass rounded-2xl border-primary/20 glow-border hover:border-primary/50 transition-colors duration-500 overflow-hidden md:row-span-1"
     >
       <div className="relative overflow-hidden aspect-video">
         <img

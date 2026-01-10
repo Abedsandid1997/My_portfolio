@@ -20,10 +20,10 @@ const Experiences = () => {
           </motion.span>
           <motion.h2
             {...fadeIn({ delay: 0.1 })}
-            className="text-4xl md:text-5xl font-bold mt-4 mb-6 text-primary"
+            className="text-4xl md:text-5xl font-bold mt-4 mb-6 text-secondary-foreground"
           >
             Experience that
-            <span className="font-serif italic font-normal text-secondary-foreground">
+            <span className="font-serif italic font-normal text-primary">
               {" "}
               speaks volumes.
             </span>

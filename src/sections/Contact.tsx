@@ -4,6 +4,7 @@ import ContactInfo from "../components/ContactSection/ContactInfo";
 import ContactForm from "../components/ContactSection/ContactForm";
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/motionPresets";
+import FloatingDots from "../components/heroSection/FloatingDots";
 
 type FormData = {
   name: string;
@@ -34,6 +35,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="py-30 relative overflow-hidden">
+      <FloatingDots />
       <div className="absolute top-0 left-0 w-full h-full">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
         <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-highlight/5 rounded-full blur-3xl" />
@@ -50,7 +52,7 @@ const Contact = () => {
             className="text-4xl md:text-5xl font-bold mt-4 mb-6 text-secondary-foreground"
           >
             Let's build{" "}
-            <span className="font-serif italic font-normal text-white">
+            <span className="font-serif italic font-normal text-primary">
               something great.
             </span>
           </motion.h2>

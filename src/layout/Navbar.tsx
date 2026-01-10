@@ -31,16 +31,24 @@ const Navbar = () => {
       }  z-50`}
     >
       <nav className="container mx-auto px-6 flex items-center justify-between">
-        <a
+        <motion.a
+          initial={{ opacity: 0, x: -30 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ type: "spring", stiffness: 100, damping: 20 }}
           href="#"
           className="text-xl font-bold tracking-tight hover:text-primary"
         >
           A<span className="text-primary">S</span>
-        </a>
+        </motion.a>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-1">
-          <div className="glass rounded-full px-2 py-1 flex items-center gap-1">
+          <motion.div
+            initial={{ opacity: 0, y: -30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ type: "spring", stiffness: 100, damping: 20 }}
+            className="glass rounded-full px-2 py-1 flex items-center gap-1"
+          >
             {navLinks.map((link, index) => (
               <a
                 key={index}
@@ -50,14 +58,19 @@ const Navbar = () => {
                 {link.label}
               </a>
             ))}
-          </div>
+          </motion.div>
         </div>
-        <div className="hidden md:block">
+        <motion.div
+          initial={{ opacity: 0, x: 30 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ type: "spring", stiffness: 100, damping: 20 }}
+          className="hidden md:block"
+        >
           <Button size="sm">
             {" "}
             <a href="#contact">Contact</a>
           </Button>
-        </div>
+        </motion.div>
 
         {/* Mobile menu button */}
 
@@ -76,9 +89,9 @@ const Navbar = () => {
         {isMobileMenuOpen && (
           <motion.div
             key="mobile-menu"
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            // exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
             className="md:hidden absolute top-full left-0 w-full glass-strong border-t border-white/10 overflow-hidden"
           >

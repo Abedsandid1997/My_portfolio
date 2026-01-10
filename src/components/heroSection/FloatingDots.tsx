@@ -7,7 +7,7 @@ const FloatingDots = () => {
                 ${
                   i % 2 === 0
                     ? "w-1 h-1 bg-primary shadow-[0_0_10px_2px_var(--color-primary)]"
-                    : "w-2 h-2 bg-muted-foreground shadow-[0_0_10px_2px_var(--color-muted-foreground)]"
+                    : "w-1.5 h-1.5 bg-muted-foreground shadow-[0_0_10px_2px_var(--color-muted-foreground)]"
                 }
               `}
           key={i}

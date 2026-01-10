@@ -16,10 +16,10 @@ const About = () => {
             </motion.div>
             <motion.h2
               {...fadeIn({ delay: 0.1 })}
-              className="text-4xl md:text-5xl font-bold leading-tight text-primary"
+              className="text-4xl md:text-5xl font-bold leading-tight text-secondary-foreground"
             >
               Modern Full Stack Development,
-              <span className="font-serif italic font-normal text-secondary-foreground">
+              <span className="font-serif italic font-normal text-primary">
                 {" "}
                 powered by Artificial Intelligence
               </span>

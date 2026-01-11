@@ -74,14 +74,17 @@ const Navbar = () => {
 
         {/* Mobile menu button */}
 
-        <button
+        <motion.button
+          initial={{ opacity: 0, x: 30 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ type: "spring", stiffness: 100, damping: 20 }}
           className="md:hidden p-2 text-foreground cursor-pointer"
           onClick={() => {
             setIsMobileMenuOpen((prev) => !prev);
           }}
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        </motion.button>
       </nav>
 
       {/* Mobile menu */}

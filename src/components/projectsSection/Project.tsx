@@ -2,6 +2,7 @@ import { ArrowUpRight } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 import { fadeIn } from "../../utils/motionPresets";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 export type ProjectData = {
   title: string;
@@ -18,20 +19,28 @@ type Props = {
 };
 
 const Project = ({ project, index }: Props) => {
+  const [isActive, setIsActive] = useState(false);
   return (
     <motion.div
       {...fadeIn({ delay: index * 0.1 })}
+      onClick={() => setIsActive((prev) => !prev)}
       className="group glass rounded-2xl border-primary/20 glow-border hover:border-primary/50 transition-colors duration-500 overflow-hidden md:row-span-1"
     >
       <div className="relative overflow-hidden aspect-video">
         <img
           src={project.image}
           alt={project.title}
-          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 group-focus:scale-110"
+          className={`w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 ${
+            isActive ? "opacity-100" : ""
+          }`}
         />
         <div className="absolute inset-0 bg-linear-to-t from-card via-card/50 to-transparent opacity-60" />
 
-        <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity duration-300">
+        <div
+          className={`absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300  ${
+            isActive ? "opacity-100" : ""
+          }`}
+        >
           {project.link && (
             <a
               href={project.link}

@@ -1,4 +1,3 @@
-import { Suspense } from "react";
 import Footer from "./layout/Footer";
 import Navbar from "./layout/Navbar";
 import Hero from "./sections/Hero";

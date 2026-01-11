@@ -51,17 +51,17 @@ const Contact = () => {
             {...fadeIn({ delay: 0 })}
             className="text-4xl md:text-5xl font-bold mt-4 mb-6 text-secondary-foreground"
           >
-            Let's build{" "}
+            Let's Work{" "}
             <span className="font-serif italic font-normal text-primary">
-              something great.
+              Together.
             </span>
           </motion.h2>
           <motion.p
             {...fadeIn({ delay: 0.1 })}
             className="text-muted-foreground"
           >
-            Have a project in mind? I'd love to hear about it. Send me a message
-            and let's discuss how we can work together.
+            Open to Opportunities. I am ready to join a development team as a
+            Junior Developer or Intern. Let's discuss how I can contribute.
           </motion.p>
         </motion.div>
 

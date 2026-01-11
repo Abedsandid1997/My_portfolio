@@ -21,23 +21,23 @@ const ProfileContent = () => {
           {...fadeIn({ delay: 0.1 })}
           className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight"
         >
-          Crafting <span className="text-primary glow-text">digital</span>
+          {" "}
+          Building
+          <span className="text-primary glow-text"> Intelligent</span>
           <br />
-          experinces with
+          Web Systems with
           <br />
           <span className="font-serif italic font-normal text-white">
-            precision.
+            Precision.
           </span>
         </motion.h1>
         <motion.p
           {...fadeIn({ delay: 0.2 })}
           className="text-lg text-muted-foreground max-w-lg"
         >
-          Hi, I'm Abdelraman Sandid - a Full Stack Developer capable of
-          architecting and building complete web systems from the ground up.
-          Specializing in React, Next.js, Node.js, and Express, I bridge the gap
-          between dynamic front-end interfaces and robust back-end logic to
-          deliver scalable, high-performance applications.
+          Hi, I'm Abdelrahman Sandid. I combine modern Full Stack development
+          with AI integration. Specializing in React, Next.js, Node.js, and
+          Express, I build smarter, future-ready applications.
         </motion.p>
       </div>
 

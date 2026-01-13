@@ -16,8 +16,8 @@ export const projects: ProjectData[] = [
       "Axios",
       "Radix UI",
     ],
-    link: "https://task-manager-gules-psi-84.vercel.app/",
-    github: "https://github.com/Abedsandid1997/Task-manager",
+    link: "https://task-manager-bwv7.vercel.app/",
+    github: "https://github.com/Abedsandid1997/Task_manager",
   },
   {
     title: "Movies Hub",
@@ -72,5 +72,5 @@ export const projects: ProjectData[] = [
       "Docker Compose",
     ],
     github: "https://github.com/Abedsandid1997/el-scooter",
-},
+  },
 ];

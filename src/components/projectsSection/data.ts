@@ -2,6 +2,25 @@ import type { ProjectData } from "./Project";
 
 export const projects: ProjectData[] = [
   {
+    title: "AI Task Manager",
+    description:
+      "A modern web application built with Next.js that enables intelligent chat conversations with AI-powered functions for project and task management.",
+    image: "/projects/ai-task-manager.webp",
+    tags: [
+      "Nextjs",
+      "Better Auth",
+      "Typescript",
+      "Prisma",
+      "Zod",
+      "React Hook Form",
+      "Vercel AI SDK",
+      "OpenAI",
+      "Groq LLM",
+    ],
+    link: "https://ai-task-manager-seven-rho.vercel.app/",
+    github: "https://github.com/Abedsandid1997/ai-task-manager",
+  },
+  {
     title: "Task manager",
     description:
       "Task Manager is a full-stack web application built to help companies manage projects in collaborative teams.",
